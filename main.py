@@ -135,4 +135,4 @@ async def end(interaction: Interaction):
     return
 
 
-client.run('OTMwNjk2NzI0NDcxNzU4ODg4.Yd5o3g.AmWQu2ZAsyU1y9mvasnCBytmTUs')
+client.run('put your token here or do the env thing')
