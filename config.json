@@ -1,7 +1,7 @@
 {
-    "allowed_channels": ["993093213189578824"],
-    "verified_role": "993093151818522664",
-    "queue_channel": "993093198400475136",
-    "adminrole": "993093151818522664"
+    "allowed_channels": ["put your queue channels here"],
+    "verified_role": "put your registered/verified role here",
+    "queue_channel": "put your text channel for queues here ",
+    "adminrole": "put your 4v4 host channel here"
   }
   
