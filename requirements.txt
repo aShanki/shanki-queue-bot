@@ -1,3 +1,1 @@
-discord-components == 2.0.4
 nextcord
-discord.py == 1.7.3

@@ -1,7 +1,7 @@
 {
-    "allowed_channels": ["Put your queue vcs here, seperated by commas"],
-    "verified_role": "Put your registered role here",
-    "queue_channel": "put your text channel where the bot will announce stuff",
-    "adminrole": "put your 4v4 host role here"
+    "allowed_channels": ["993093213189578824"],
+    "verified_role": "993093151818522664",
+    "queue_channel": "993093198400475136",
+    "adminrole": "993093151818522664"
   }
   

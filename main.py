@@ -1,18 +1,17 @@
 import nextcord, os, json, asyncio, random
 from nextcord.ext import commands
 from nextcord import SlashOption, Interaction
-from discord_components import DiscordComponents, Button, ButtonStyle, Select, SelectOption
 
-intents = nextcord.Intents.default(); intents.reactions = True; intents.members = True; intents.presences = True
-client = commands.Bot(command_prefix = "-", strip_after_prefix = True, case_insensitive = True, intents=intents)
+# intents = nextcord.Intents.all() 
+# Note: To enable the intents through code you have to enable them in the Discord Developer Portal, otherwise it won't work
+client = commands.Bot(command_prefix = "-", strip_after_prefix = True, case_insensitive = True)
 
 @client.event
 async def on_ready():
-  DiscordComponents(client)
   print(f'{client.user.name}#{client.user.discriminator} is now Online!')
 
 @client.event
-async def on_voice_state_update(member, before, after):
+async def on_voice_state_update(member: nextcord.Member, before: nextcord.VoiceState, after: nextcord.VoiceState):
   if before.channel is None and after.channel is not None:
     w = open("config.json")
     config = json.load(w)
@@ -134,5 +133,5 @@ async def end(interaction: Interaction):
   else:
     return
 
-
-client.run('put your token here or do the env thing')
+if __name__ == "__main__":
+  client.run('OTMwNjk2NzI0NDcxNzU4ODg4.G0lIHh.prm5qT1IK2VvMvekEZckr2HoGw50OAyhtovJFE')
