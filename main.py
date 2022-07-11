@@ -134,4 +134,4 @@ async def end(interaction: Interaction):
     return
 
 if __name__ == "__main__":
-  client.run('OTMwNjk2NzI0NDcxNzU4ODg4.G0lIHh.prm5qT1IK2VvMvekEZckr2HoGw50OAyhtovJFE')
+  client.run('put your token here')
